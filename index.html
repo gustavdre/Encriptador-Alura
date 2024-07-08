@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/Logo alura.png" alt="Logo de Alura">
+        </div>
+        <h1 class="titulo_header">Enigma</h1>
+    </header>
+    <main>
+        <section class="user-input">
+            <h2 class="informacion">Solo letras minúsculas y sin acento</h2>
+            <div class="user">
+                <input class="user__text" type="text" id="userText" name="userText" placeholder="Ingrese su texto aquí" required>
+                <input class="user__result" type="text" id="result" name="result" placeholder="Ningún mensaje fue encontrado" readonly>
+            </div>
+            <div class="buttons">
+                <button class="encriptar__button" type="button" id="button1" onclick="encriptarTexto()">Encriptar</button>
+                <button class="desencriptar__button" type="button" id="button2" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+            <div class="copy">
+                <button class="copy__button" type="button" id="copyButton" onclick="copiarResultado()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Augusto Andre</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
